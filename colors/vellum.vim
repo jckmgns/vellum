@@ -15,7 +15,7 @@
 highlight clear
 
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
@@ -32,7 +32,7 @@ let g:colors_name = 'vellum'
 
 " Arguments: from-group, to-group
 function! s:Li(from, to)
-    execute 'hi! link ' . a:from . ' ' . a:to
+  execute 'hi! link ' . a:from . ' ' . a:to
 endfunction
 
 " }}}
@@ -45,23 +45,23 @@ function! s:Hl(group, ...)
   let special = s:none " special attributes
 
   if a:0 >= 1
-      let fg = a:1
+    let fg = a:1
   endif
 
   if a:0 >= 2
-      let bg = a:2
+    let bg = a:2
   endif
 
   if a:0 >= 3
-      let special = a:3
+    let special = a:3
   endif
 
   let histring = [ 'hi',
-              \ a:group,
-              \ 'guifg=' . fg,
-              \ 'guibg=' . bg,
-              \ 'gui=' . special
-              \ ]
+        \ a:group,
+        \ 'guifg=' . fg,
+        \ 'guibg=' . bg,
+        \ 'gui=' . special
+        \ ]
 
   " special color
   if a:0 >= 4

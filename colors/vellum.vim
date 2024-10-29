@@ -82,14 +82,14 @@ if !exists('g:vellum#monochrome')
   let g:vellum#monochrome = 0
 endif
 
-let s:c0 = '#f8e7dd'
-let s:c1 = '#dcccc3'
-let s:c2 = '#c1b2a9'
-let s:c3 = '#736861'
-let s:c4 = '#5b514b'
-let s:c5 = '#443b35'
-let s:c6 = '#2e2621'
-let s:c7 = '#1a130f'
+let s:c0 = '#fcf1ee'
+let s:c1 = '#d7ccc8'
+let s:c2 = '#aca29e'
+let s:c3 = '#817672'
+let s:c4 = '#584e49'
+let s:c5 = '#362c27'
+let s:c6 = '#1e140f'
+let s:c7 = '#160c07'
 
 let s:bg0 = s:c0
 let s:bg1 = s:c1
@@ -100,17 +100,17 @@ let s:fg0 = s:c7
 if g:vellum#monochrome
   let s:re0 = s:c5
   let s:gr0 = s:c4
-  let s:ye0 = s:c4
+  let s:ye0 = s:c5
   let s:bl0 = s:c6
-  let s:ma0 = s:c6
-  let s:cy0 = s:c6
+  let s:ma0 = s:c5
+  let s:cy0 = s:c4
 else
-  let s:re0 = '#955350'
-  let s:gr0 = '#8f754d'
-  let s:ye0 = '#b88147'
-  let s:bl0 = '#537979'
-  let s:ma0 = '#8c5a73'
-  let s:cy0 = '#778972'
+  let s:re0 = '#a84248'
+  let s:gr0 = '#7a7424'
+  let s:ye0 = '#c7823e'
+  let s:bl0 = '#3a6d77'
+  let s:ma0 = '#ac5e82'
+  let s:cy0 = '#6a8f6c'
 endif
 
 " ---------------
@@ -118,7 +118,13 @@ endif
 " }}}
 " Utility: {{{
 
-let s:none      = 'NONE'
+let s:none = 'NONE'
+
+if g:vellum#monochrome
+  let s:monobold = 'bold'
+else
+  let s:monobold = 'NONE'
+endif
 
 " }}}
 
@@ -189,10 +195,11 @@ call s:Hl('SpecialKey', s:none, s:bg1)
 " }}}
 " Variable types: {{{
 
-call s:Hl('Constant', s:ma0, s:none)
-call s:Li('Character', 'Constant')
-call s:Li('Boolean', 'Constant')
+call s:Hl('Constant', s:ma0, s:none, s:monobold)
+
 call s:Li('Number', 'Constant')
+call s:Li('Boolean', 'Number')
+call s:Li('Character', 'Number')
 call s:Li('Float', 'Number')
 
 call s:Hl('String', s:gr0, s:none)
@@ -209,7 +216,7 @@ call s:Li('SpecialComment', 'Comment')
 
 call s:Hl('Operator', s:fg0, s:none)
 
-call s:Hl('Statement', s:re0, s:none)
+call s:Hl('Statement', s:re0, s:none, s:monobold)
 call s:Li('Conditional', 'Statement')
 call s:Li('Repeat', 'Statement')
 call s:Li('Label', 'Statement')
@@ -217,7 +224,7 @@ call s:Li('Keyword', 'Statement')
 call s:Li('Exception', 'Statement')
 call s:Li('Tag', 'Statement')
 
-call s:Hl('Special', s:re0, s:none)
+call s:Hl('Special', s:re0, s:none, s:monobold)
 call s:Li('Delimiter', 'Special')
 call s:Li('Debug', 'Special')
 call s:Li('StorageClass', 'Special')
@@ -232,7 +239,7 @@ call s:Li('Define', 'PreProc')
 call s:Li('Macro', 'PreProc')
 call s:Li('PreCondit', 'PreProc')
 
-call s:Hl('Type', s:ye0, s:none)
+call s:Hl('Type', s:ye0, s:none, s:monobold)
 
 " }}}
 " Diagnostic: {{{
@@ -332,6 +339,11 @@ call s:Li('Sneak', 'Search')
 " Filetype definitions
 " --------------------------------
 
+" Java: {{{
+
+call s:Li('javaOperator', 'Statement')
+
+" }}}
 " Javascript: {{{
 
 call s:Li('javaScriptBraces', 'Normal')

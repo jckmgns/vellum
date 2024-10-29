@@ -1,6 +1,6 @@
 # Vellum
 
-A mellow syntax theme with a restrained choice of colors to lessen visual
+A sun-bleached syntax theme with a restrained choice of colors to lessen visual
 clutter.
 
 ## Installation
@@ -38,11 +38,11 @@ This option needs to be set before the `colorscheme vellum` statement.
 
 ### Color Mode
 
-![Color](https://i.imgur.com/eBMChzr.png)
+![Color](https://i.imgur.com/8cSIoMR.png)
 
 ### Monochrome Mode
 
-![Monochrome](https://i.imgur.com/MFRNdiB.png)
+![Monochrome](https://i.imgur.com/aHky3R2.png)
 
 ## License
 

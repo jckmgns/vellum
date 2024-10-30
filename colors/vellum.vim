@@ -195,7 +195,7 @@ call s:Hl('SpecialKey', s:none, s:bg1)
 " }}}
 " Variable types: {{{
 
-call s:Hl('Constant', s:ma0, s:none, s:monobold)
+call s:Hl('Constant', s:ye0, s:none, s:monobold)
 
 call s:Li('Number', 'Constant')
 call s:Li('Boolean', 'Number')
@@ -239,7 +239,7 @@ call s:Li('Define', 'PreProc')
 call s:Li('Macro', 'PreProc')
 call s:Li('PreCondit', 'PreProc')
 
-call s:Hl('Type', s:ye0, s:none, s:monobold)
+call s:Hl('Type', s:re0, s:none, s:monobold)
 
 " }}}
 " Diagnostic: {{{
@@ -364,14 +364,16 @@ call s:Li('luaTable', 'Normal')
 " }}}
 " Markdown: {{{
 
-call s:Hl('markdownH1', s:ye0, s:none, 'bold')
+call s:Hl('markdownH1', s:re0, s:none, 'bold')
 call s:Li('markdownH2', 'markdownH1')
 call s:Li('markdownH3', 'markdownH1')
 call s:Li('markdownH4', 'markdownH1')
 call s:Li('markdownH5', 'markdownH1')
 call s:Li('markdownH6', 'markdownH1')
 
-call s:Hl('markdownCode', s:ma0, s:none)
+call s:Hl('markdownHeadingDelimiter', s:re0, s:none)
+
+call s:Hl('markdownCode', s:fg1, s:none)
 call s:Li('markdownCodeBlock', 'markdownCode')
 call s:Li('markdownCodeDelimiter', 'markdownCode')
 
@@ -384,8 +386,7 @@ call s:Li('markdownUrlDelimiter', 'Comment')
 call s:Li('markdownLinkDelimiter', 'Comment')
 call s:Li('markdownLinkTextDelimiter', 'Comment')
 
-call s:Hl('markdownHeadingDelimiter', s:ye0, s:none)
-call s:Hl('markdownUrl', s:ma0, s:none)
+call s:Hl('markdownUrl', s:ye0, s:none)
 call s:Hl('markdownUrlTitleDelimiter', s:gr0, s:none)
 
 call s:Hl('markdownLinkText', s:fg1, s:none, 'underline')

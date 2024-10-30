@@ -105,11 +105,11 @@ if g:vellum#monochrome
   let s:ma0 = s:c5
   let s:cy0 = s:c4
 else
-  let s:re0 = '#a84248'
-  let s:gr0 = '#7a7424'
-  let s:ye0 = '#c7823e'
+  let s:re0 = '#9f4847'
+  let s:gr0 = '#7A6B24'
+  let s:ye0 = '#bf7d42'
   let s:bl0 = '#3a6d77'
-  let s:ma0 = '#ac5e82'
+  let s:ma0 = '#A6627F'
   let s:cy0 = '#6a8f6c'
 endif
 

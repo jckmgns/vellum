@@ -38,11 +38,11 @@ This option needs to be set before the `colorscheme vellum` statement.
 
 ### Color Mode
 
-![Color](https://i.imgur.com/8cSIoMR.png)
+![Color](https://i.imgur.com/cCXMEBc.png)
 
 ### Monochrome Mode
 
-![Monochrome](https://i.imgur.com/aHky3R2.png)
+![Monochrome](https://i.imgur.com/KsebYBP.png)
 
 ## License
 

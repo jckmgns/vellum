@@ -1,6 +1,6 @@
 " --------------------------------
 " Name: Vellum
-" Description: Mellow syntax theme with a restrained choice of colors
+" Description: Light syntax theme with minimal colors to lessen visual clutter.
 " Author: Jack Magnus
 " Email: vellum@jackmagnus.cc
 " Source: https://github.com/jckmgns/vellum

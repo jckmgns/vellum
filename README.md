@@ -1,7 +1,6 @@
 # Vellum
 
-A sun-bleached syntax theme with a restrained choice of colors to lessen visual
-clutter.
+A light syntax theme with minimal colors to lessen visual clutter.
 
 ## Installation
 

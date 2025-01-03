@@ -1,7 +1,3 @@
-# Vellum
-
-A light syntax theme with minimal colors to lessen visual clutter.
-
 ## Installation
 
 Install with your favorite package manager and add the following to your vimrc:
@@ -21,27 +17,11 @@ execute "set t_8f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 ```
 
-## Configuration
-
-### Monochrome Mode
-
-Enable monochrome mode using the following option:
-
-```
-let g:vellum#monochrome=1 " Enable monochrome mode.
-```
-
-This option needs to be set before the `colorscheme vellum` statement.
-
 ## Screenshots
 
-### Color Mode
+![Code Screenshot](https://i.imgur.com/JLIo2Hr.png)
 
-![Color](https://i.imgur.com/cCXMEBc.png)
-
-### Monochrome Mode
-
-![Monochrome](https://i.imgur.com/KsebYBP.png)
+![Diff Screenshot](https://i.imgur.com/WfOWg8H.png)
 
 ## License
 

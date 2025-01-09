@@ -137,24 +137,22 @@ call s:Hl('TabLineSel', s:fg1, s:bg1)
 call s:Hl('VertSplit', s:fg2, s:bg0)
 
 " }}}
-" Navigation (Netrw): {{{
+" Search: {{{
 
-call s:Hl('Directory', s:blu, s:bg0)
-call s:Hl('IncSearch', s:bg1, s:fg0, 'bold')
+call s:Hl('CurSearch', s:bg0, s:fg0)
+call s:Hl('IncSearch', s:bg0, s:fg0, 'bold')
 call s:Hl('Search', s:fg0, s:bg2)
-call s:Li('CurSearch', 'Search')
-call s:Hl('netrwSymLink', s:cya, s:bg0)
 
 " }}}
 " Prompt: {{{
 
 call s:Hl('StatusLine', s:fg0, s:bg1)
 call s:Hl('StatusLineNC', s:fg2, s:bg1)
-call s:Hl('WildMenu', s:fg1, s:bg1, 'bold')
-call s:Hl('Question', s:fg1, s:none, 'bold')
-call s:Hl('Title', s:fg1, s:none, 'bold')
-call s:Hl('ModeMsg', s:fg1, s:bg0, 'bold')
-call s:Hl('MoreMsg', s:fg1, s:bg0, 'bold')
+call s:Hl('WildMenu', s:fg0, s:bg1, 'bold')
+call s:Hl('Question', s:fg0, s:none, 'bold')
+call s:Hl('Title', s:fg0, s:none, 'bold')
+call s:Hl('ModeMsg', s:fg0, s:bg0, 'bold')
+call s:Hl('MoreMsg', s:fg0, s:bg0, 'bold')
 
 " }}}
 " Visual aid: {{{
@@ -175,7 +173,7 @@ call s:Hl('SpecialKey', s:none, s:bg1)
 " }}}
 " Variable types: {{{
 
-call s:Hl('Constant', s:fg1, s:none, 'bold')
+call s:Hl('Constant', s:fg0, s:none, 'bold')
 
 call s:Li('Number', 'Constant')
 call s:Li('Boolean', 'Number')
@@ -196,7 +194,7 @@ call s:Li('SpecialComment', 'Comment')
 
 call s:Hl('Operator', s:fg0, s:none)
 
-call s:Hl('Statement', s:fg1, s:none, 'bold')
+call s:Hl('Statement', s:fg0, s:none, 'bold')
 call s:Li('Conditional', 'Statement')
 call s:Li('Repeat', 'Statement')
 call s:Li('Label', 'Statement')
@@ -204,14 +202,14 @@ call s:Li('Keyword', 'Statement')
 call s:Li('Exception', 'Statement')
 call s:Li('Tag', 'Statement')
 
-call s:Hl('Special', s:fg1, s:none, 'bold')
+call s:Hl('Special', s:fg0, s:none, 'bold')
 call s:Li('Delimiter', 'Special')
 call s:Li('Debug', 'Special')
 call s:Li('StorageClass', 'Special')
 call s:Li('Structure', 'Special')
 call s:Li('Typedef', 'Structure')
 
-call s:Hl('SpecialChar', s:fg1, s:none, 'bold')
+call s:Hl('SpecialChar', s:fg0, s:none, 'bold')
 
 call s:Hl('PreProc', s:fg0, s:none)
 call s:Li('Include', 'PreProc')
@@ -219,7 +217,7 @@ call s:Li('Define', 'PreProc')
 call s:Li('Macro', 'PreProc')
 call s:Li('PreCondit', 'PreProc')
 
-call s:Hl('Type', s:fg1, s:none, 'bold')
+call s:Hl('Type', s:fg0, s:none, 'bold')
 
 " }}}
 " Diagnostic: {{{
@@ -241,6 +239,12 @@ call s:Hl('DiffText', s:yel, s:bg0)
 call s:Li('diffAdded', 'DiffAdd')
 call s:Li('diffRemoved', 'DiffDelete')
 call s:Li('diffChanged', 'DiffChange')
+
+" }}}
+" Netrw: {{{
+
+call s:Hl('Directory', s:blu, s:bg0)
+call s:Hl('netrwSymLink', s:cya, s:bg0)
 
 " }}}
 " Completion menu: {{{
@@ -344,7 +348,7 @@ call s:Li('luaTable', 'Normal')
 " }}}
 " Markdown: {{{
 
-call s:Hl('markdownH1', s:fg1, s:none, 'bold')
+call s:Hl('markdownH1', s:fg0, s:none, 'bold')
 call s:Li('markdownH2', 'markdownH1')
 call s:Li('markdownH3', 'markdownH1')
 call s:Li('markdownH4', 'markdownH1')

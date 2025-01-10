@@ -16,7 +16,8 @@ colorscheme vellum " Set the colorscheme to Vellum.
 
 --- 
 
-Add the following snippet if colors aren't displayed correctly:
+Add the following snippet if colors aren't displayed correctly (see `:h
+xterm-true-color`):
 
 ```
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"

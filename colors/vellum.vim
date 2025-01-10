@@ -22,9 +22,6 @@ if !(has('termguicolors') && &termguicolors) && !has('gui_running')
   finish
 endif
 
-set t_8f=\e[38;2;%lu;%lu;%lum
-set t_8b=\e[48;2;%lu;%lu;%lum
-
 let g:colors_name = 'vellum'
 
 " }}}

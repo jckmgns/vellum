@@ -236,6 +236,8 @@ call s:Hl('DiffDelete', s:red, s:bg0)
 call s:Hl('DiffChange', s:blu, s:bg0)
 call s:Hl('DiffText', s:yel, s:bg0)
 
+call s:Hl('diffLine', s:cya, s:bg0)
+
 call s:Li('diffAdded', 'DiffAdd')
 call s:Li('diffRemoved', 'DiffDelete')
 call s:Li('diffChanged', 'DiffChange')

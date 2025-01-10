@@ -1,3 +1,9 @@
+# Vellum
+
+A (mostly[^1]) monochromatic light colorscheme for Vim and Neovim.
+
+[^1]: Some colors are used where it makes sense (e.g., diffs, errors, netrw).
+
 ## Installation
 
 Install with your favorite package manager and add the following to your vimrc:
@@ -19,9 +25,9 @@ execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 ## Screenshots
 
-![Code Screenshot](https://i.imgur.com/JLIo2Hr.png)
+![Code Screenshot](https://i.imgur.com/0zLuY7N.png)
 
-![Diff Screenshot](https://i.imgur.com/WfOWg8H.png)
+![Diff Screenshot](https://i.imgur.com/OVnvJ9d.png)
 
 ## License
 

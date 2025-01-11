@@ -137,7 +137,7 @@ call s:Hl('VertSplit', s:fg2, s:bg0)
 " Search: {{{
 
 call s:Hl('CurSearch', s:bg0, s:fg0)
-call s:Hl('IncSearch', s:bg0, s:fg0, 'bold')
+call s:Hl('IncSearch', s:bg0, s:fg0)
 call s:Hl('Search', s:fg0, s:bg2)
 
 " }}}
@@ -155,8 +155,8 @@ call s:Hl('MoreMsg', s:fg0, s:bg0, 'bold')
 " Visual aid: {{{
 
 call s:Hl('MatchParen', s:none, s:bg2, 'bold')
-call s:Hl('Visual', s:none, s:bg1)
-call s:Hl('VisualNOS', s:none, s:bg1)
+call s:Hl('Visual', s:fg0, s:bg1)
+call s:Hl('VisualNOS', s:fg0, s:bg1)
 call s:Hl('NonText', s:bg1, s:bg0)
 
 call s:Hl('Todo', s:fg0, s:none, 'bold')

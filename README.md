@@ -27,9 +27,9 @@ execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 ## Screenshots
 
-![Code Screenshot](https://i.imgur.com/XRDdRco.png)
+![Code Screenshot](https://i.imgur.com/DxpwQMY.png)
 
-![Diff Screenshot](https://i.imgur.com/3zmt1U6.png)
+![Diff Screenshot](https://i.imgur.com/ZYPbcqL.png)
 
 ## License
 

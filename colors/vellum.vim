@@ -186,7 +186,7 @@ call s:Li('Function', 'Identifier')
 " }}}
 " Language constructs: {{{
 
-call s:Hl('Comment', s:fg2, s:none)
+call s:Hl('Comment', s:fg2, s:none, 'italic')
 call s:Li('SpecialComment', 'Comment')
 
 call s:Hl('Operator', s:fg0, s:none)
@@ -359,15 +359,14 @@ call s:Hl('markdownHeadingDelimiter', s:fg1, s:none)
 call s:Hl('markdownCode', s:fg2, s:none)
 call s:Li('markdownCodeBlock', 'markdownCode')
 call s:Li('markdownCodeDelimiter', 'markdownCode')
-
-call s:Li('markdownBlockquote', 'Comment')
-call s:Li('markdownListMarker', 'Comment')
-call s:Li('markdownOrderedListMarker', 'Comment')
-call s:Li('markdownRule', 'Comment')
-call s:Li('markdownHeadingRule', 'Comment')
-call s:Li('markdownUrlDelimiter', 'Comment')
-call s:Li('markdownLinkDelimiter', 'Comment')
-call s:Li('markdownLinkTextDelimiter', 'Comment')
+call s:Li('markdownBlockquote', 'markdownCode')
+call s:Li('markdownListMarker', 'markdownCode')
+call s:Li('markdownOrderedListMarker', 'markdownCode')
+call s:Li('markdownRule', 'markdownCode')
+call s:Li('markdownHeadingRule', 'markdownCode')
+call s:Li('markdownUrlDelimiter', 'markdownCode')
+call s:Li('markdownLinkDelimiter', 'markdownCode')
+call s:Li('markdownLinkTextDelimiter', 'markdownCode')
 
 call s:Hl('markdownUrl', s:fg1, s:none)
 call s:Hl('markdownUrlTitleDelimiter', s:fg1, s:none)

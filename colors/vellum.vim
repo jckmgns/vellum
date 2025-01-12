@@ -307,10 +307,10 @@ call s:Li('EasyMotionShade', 'Comment')
 " }}}
 " GitGutter: {{{
 
-call s:Hl('GitGutterAdd', s:fg1, s:bg1)
-call s:Hl('GitGutterChange', s:fg1, s:bg1)
-call s:Hl('GitGutterDelete', s:fg1, s:bg1)
-call s:Hl('GitGutterChangeDelete', s:fg1, s:bg1)
+call s:Hl('GitGutterAdd', s:gre, s:bg1)
+call s:Hl('GitGutterChange', s:blu, s:bg1)
+call s:Hl('GitGutterDelete', s:red, s:bg1)
+call s:Hl('GitGutterChangeDelete', s:red, s:bg1)
 
 " }}}
 " Sneak: {{{

@@ -1,6 +1,9 @@
 # Vellum
 
-A light monochromatic syntax theme for Vim and Neovim.
+A light Vim/Neovim theme to minimize visual clutter.
+
+Syntax is made distinct by using shades and font styles. Colors are used only
+if necessary, to display errors or a meaningful `diff` for example.
 
 ## Installation
 
@@ -24,9 +27,9 @@ execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 ## Screenshots
 
-![Code Screenshot](https://i.imgur.com/0zLuY7N.png)
+![Code Screenshot](https://i.imgur.com/XRDdRco.png)
 
-![Diff Screenshot](https://i.imgur.com/OVnvJ9d.png)
+![Diff Screenshot](https://i.imgur.com/3zmt1U6.png)
 
 ## License
 

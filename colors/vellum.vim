@@ -76,10 +76,10 @@ endfunction
 " Palette: {{{
 
 let s:c0 = '#f7efee'
-let s:c1 = '#e4dddc'
-let s:c2 = '#b6b1b0'
-let s:c3 = '#7b7777'
-let s:c4 = '#403d3d'
+let s:c1 = '#ebe1dd'
+let s:c2 = '#cfbeb4'
+let s:c3 = '#7a716b'
+let s:c4 = '#433c37'
 let s:c5 = '#121111'
 
 let s:bg0 = s:c0

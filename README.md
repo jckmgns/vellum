@@ -1,8 +1,6 @@
 # Vellum
 
-A (mostly[^1]) monochromatic light colorscheme for Vim and Neovim.
-
-[^1]: Some colors are used where it makes sense (e.g., diffs, errors, netrw).
+A light monochromatic syntax theme for Vim and Neovim.
 
 ## Installation
 

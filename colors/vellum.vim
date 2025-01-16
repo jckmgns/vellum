@@ -1,6 +1,5 @@
 " --------------------------------
 " Name: Vellum
-" Description: Monochromatic light theme
 " Author: Jack Magnus
 " Email: vellum@jackmagnus.cc
 " Source: https://github.com/jckmgns/vellum

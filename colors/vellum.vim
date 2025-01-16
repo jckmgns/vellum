@@ -325,6 +325,7 @@ call s:Li('Sneak', 'Search')
 " Java: {{{
 
 call s:Li('javaOperator', 'Statement')
+call s:Li('javaConceptKind', 'Statement')
 
 " }}}
 " Javascript: {{{

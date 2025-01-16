@@ -89,12 +89,12 @@ let s:fg2 = s:c3
 let s:fg1 = s:c4
 let s:fg0 = s:c5
 
-let s:red = '#9f4847'
-let s:gre = '#7A6B24'
-let s:yel = '#bf7d42'
-let s:blu = '#3a6d77'
-let s:mag = '#A6627F'
-let s:cya = '#6a8f6c'
+let s:red     = '#9f4847'
+let s:green   = '#7a6b24'
+let s:yellow  = '#bf7d42'
+let s:blue    = '#3a6d77'
+let s:magenta = '#a6627f'
+let s:cyan    = '#6a8f6c'
 
 " ---------------
 
@@ -220,20 +220,20 @@ call s:Hl('Type', s:fg0, s:none, 'bold')
 " Diagnostic: {{{
 
 call s:Hl('DiagnosticError', s:red, s:none)
-call s:Hl('DiagnosticWarn', s:yel, s:none)
-call s:Hl('DiagnosticInfo', s:cya, s:none)
-call s:Hl('DiagnosticHint', s:blu, s:none)
-call s:Hl('DiagnosticOk', s:gre, s:none)
+call s:Hl('DiagnosticWarn', s:yellow, s:none)
+call s:Hl('DiagnosticInfo', s:cyan, s:none)
+call s:Hl('DiagnosticHint', s:blue, s:none)
+call s:Hl('DiagnosticOk', s:green, s:none)
 
 " }}}
 " Diff: {{{
 
-call s:Hl('DiffAdd', s:gre, s:bg0)
+call s:Hl('DiffAdd', s:green, s:bg0)
 call s:Hl('DiffDelete', s:red, s:bg0)
-call s:Hl('DiffChange', s:blu, s:bg0)
-call s:Hl('DiffText', s:yel, s:bg0)
+call s:Hl('DiffChange', s:blue, s:bg0)
+call s:Hl('DiffText', s:yellow, s:bg0)
 
-call s:Hl('diffLine', s:cya, s:bg0)
+call s:Hl('diffLine', s:cyan, s:bg0)
 
 call s:Li('diffAdded', 'DiffAdd')
 call s:Li('diffRemoved', 'DiffDelete')
@@ -242,8 +242,8 @@ call s:Li('diffChanged', 'DiffChange')
 " }}}
 " Netrw: {{{
 
-call s:Hl('Directory', s:blu, s:bg0)
-call s:Hl('netrwSymLink', s:cya, s:bg0)
+call s:Hl('Directory', s:blue, s:bg0)
+call s:Hl('netrwSymLink', s:cyan, s:bg0)
 
 " }}}
 " Completion menu: {{{
@@ -257,16 +257,16 @@ call s:Hl('PmenuThumb', s:none, s:bg2)
 " Spelling: {{{
 
 call s:Hl('SpellBad', s:none, s:none, 'undercurl', s:red)
-call s:Hl('SpellCap', s:gre, s:none, 'bold')
-call s:Hl('SpellLocal', s:none, s:none, 'undercurl', s:mag)
-call s:Hl('SpellRare', s:none, s:none, 'undercurl', s:mag)
+call s:Hl('SpellCap', s:green, s:none, 'bold')
+call s:Hl('SpellLocal', s:none, s:none, 'undercurl', s:magenta)
+call s:Hl('SpellRare', s:none, s:none, 'undercurl', s:magenta)
 
 " }}}
 " Neovim: {{{
 
 call s:Hl('RedrawDebugNormal', s:bg0, s:fg0)
-call s:Hl('RedrawDebugClear', s:bg0, s:yel)
-call s:Hl('RedrawDebugComposed', s:bg0, s:gre)
+call s:Hl('RedrawDebugClear', s:bg0, s:yellow)
+call s:Hl('RedrawDebugComposed', s:bg0, s:green)
 call s:Hl('RedrawDebugRecompose', s:bg0, s:red)
 
 call s:Li('NvimFigureBrace', 'Error')
@@ -291,10 +291,10 @@ call s:Hl('FloatShadowThrough', s:bg0, s:fg1)
 
 call s:Hl('ALEError', s:none, s:none, 'undercurl', s:red)
 call s:Hl('ALEErrorSign', s:red, s:bg1)
-call s:Hl('ALEWarning', s:none, s:none, 'undercurl', s:yel)
-call s:Hl('ALEWarningSign', s:yel, s:bg1)
+call s:Hl('ALEWarning', s:none, s:none, 'undercurl', s:yellow)
+call s:Hl('ALEWarningSign', s:yellow, s:bg1)
 call s:Hl('ALEInfo', s:none, s:none)
-call s:Hl('ALEInfoSign', s:mag, s:bg1)
+call s:Hl('ALEInfoSign', s:magenta, s:bg1)
 
 " }}}
 " EasyMotion: {{{
@@ -307,8 +307,8 @@ call s:Li('EasyMotionShade', 'Comment')
 " }}}
 " GitGutter: {{{
 
-call s:Hl('GitGutterAdd', s:gre, s:bg1)
-call s:Hl('GitGutterChange', s:blu, s:bg1)
+call s:Hl('GitGutterAdd', s:green, s:bg1)
+call s:Hl('GitGutterChange', s:blue, s:bg1)
 call s:Hl('GitGutterDelete', s:red, s:bg1)
 call s:Hl('GitGutterChangeDelete', s:red, s:bg1)
 

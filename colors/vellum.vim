@@ -157,7 +157,7 @@ call s:Hl('MoreMsg', s:fg0, s:bg0, 'bold')
 call s:Hl('MatchParen', s:none, s:bg2, 'bold')
 call s:Hl('Visual', s:fg0, s:bg1)
 call s:Hl('VisualNOS', s:fg0, s:bg1)
-call s:Hl('NonText', s:bg1, s:bg0)
+call s:Hl('NonText', s:bg2, s:bg0)
 
 call s:Hl('Todo', s:fg0, s:none, 'bold')
 call s:Hl('Underlined', s:fg1, s:none, 'underline')

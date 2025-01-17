@@ -95,6 +95,8 @@ let s:blue    = '#3a6d77'
 let s:magenta = '#a6627f'
 let s:cyan    = '#6a8f6c'
 
+let s:special = '#c8a189'
+
 " ---------------
 
 " }}}
@@ -135,7 +137,7 @@ call s:Hl('VertSplit', s:fg2, s:bg0)
 " }}}
 " Search: {{{
 
-call s:Hl('CurSearch', s:bg0, s:fg0)
+call s:Hl('CurSearch', s:fg0, s:special)
 call s:Hl('IncSearch', s:bg0, s:fg0)
 call s:Hl('Search', s:fg0, s:bg2)
 

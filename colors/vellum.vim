@@ -131,7 +131,7 @@ call s:Hl('SignColumn', s:none, s:bg1)
 call s:Hl('ColorColumn', s:none, s:bg1)
 call s:Hl('TabLine', s:fg2, s:bg1)
 call s:Hl('TabLineFill', s:fg2, s:bg1)
-call s:Hl('TabLineSel', s:fg1, s:bg1)
+call s:Hl('TabLineSel', s:fg0, s:bg1)
 call s:Hl('VertSplit', s:fg2, s:bg0)
 
 " }}}
